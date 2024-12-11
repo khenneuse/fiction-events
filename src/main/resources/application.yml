@@ -12,6 +12,8 @@ management:
   info:
     env:
       enabled: true
+    git:
+      mode: full
   endpoints:
     web:
       exposure:
