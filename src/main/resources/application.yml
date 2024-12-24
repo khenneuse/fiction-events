@@ -1,13 +1,12 @@
 spring:
   application:
     name: events
-  datasource:
-    url: 'jdbc:postgresql://localhost:5432/fictional_events'
-    username: postgres
-    password: password
-  jpa: 
-    hibernate: 
-    ddl-auto: never
+  # datasource:
+  #   url: 'jdbc:postgresql://localhost:5432/fictional_events'
+  #   username: postgres
+  # jpa:
+  #   hibernate:
+  #   ddl-auto: never
 management:
   info:
     env:
@@ -19,8 +18,8 @@ management:
       exposure:
         include: health, info
       base-path: /actuator
-info: 
-  app: 
+info:
+  app:
     name: Spring Boot Actuator Info Application
     description: Spring Boot application that explores the /info endpoint
     build: 1.0.0
