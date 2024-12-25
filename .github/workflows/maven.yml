@@ -45,7 +45,6 @@ jobs:
       run: |
         git tag -a ${VERSION} -m "Release ${VERSION}."
         git push origin ${VERSION}
-        echo "tag ${VERSION} new_tag ${{steps.next_tag.outputs.new_tag}} old_tag ${{steps.next_tag.outputs.old_tag}}"
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
